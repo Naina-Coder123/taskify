@@ -1,21 +1,45 @@
-@import '../../../styles/vars';
+.popup,
+.modal,
+.language-selector {
+  display: none !important;
+}
 
-header {
-  width: 100%;
+.taskify-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a; // Tailwind-style dark navy
+  color: #ffffff;
   padding: 1rem 2rem;
-  
-  h1 {
-    font-weight: 400;
-    text-transform: uppercase;
+  font-family: 'Segoe UI', sans-serif;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
   }
 
-  color: $primaryColor;
-  background-color: $white;
-  border-bottom: 3px solid $white-1;
+  nav ul {
+    display: flex;
+    gap: 1rem;
 
-  @media only screen and (max-width: 780px) {
-    h1 {
-      font-size: 24px;
+    li {
+      cursor: pointer;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #38bdf8; // Light blue
+      }
     }
   }
 }

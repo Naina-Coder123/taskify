@@ -60,17 +60,17 @@ const Stack: React.FC<Props> = (props) => {
             className='action-button'
             onClick={setShowTaskForm}
           >
-            adicionar {taskTitle ? taskTitle : 'task'}
+            Add {taskTitle ? taskTitle : 'task'}
           </button>
           <input
             type='text'
-            placeholder='Titulo'
+            placeholder='Title'
             value={taskTitle}
             onChange={e => setTaskTitle(e.target.value)}
           />
-          {formError && <p className='error-message'>Preencha ao menos o título</p>}
+          {formError && <p className='error-message'>Oops! You forgot to add the task title.</p>}
           <textarea
-            placeholder='Descrição'
+            placeholder='Description'
             rows={4}
             value={taskDescription}
             onChange={e => setTaskDescription(e.target.value)}

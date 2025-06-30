@@ -1,14 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './styles.scss';
 
-import './styles.scss'
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <h1><Link to='/'>Taskei</Link></h1>
+    <header className="taskify-header">
+      <div className="logo">
+        {/* Replace with your own logo if you want */}
+        <img src="/logo192.png" alt="Taskify Logo" />
+        <h1>Taskify</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Dashboard</li>
+          <li>Boards</li>
+          <li>About</li>
+        </ul>
+      </nav>
     </header>
   );
-}
+};
 
 export default Header;

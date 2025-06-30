@@ -7,6 +7,7 @@ import { TasksActions, TaskState } from '../../../routes/Tasks/reducers/types'
 import './styles.scss'
 import '../../../styles/_vars.scss';
 
+
 interface Props {
   task: TaskState;
   stackId: string;

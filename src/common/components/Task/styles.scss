@@ -1,5 +1,11 @@
 @import '../../../styles/vars';
 
+.popup,
+.modal,
+.language-selector {
+  display: none !important;
+}
+
 .task-container {
   display: flex;
   justify-content: space-between;
@@ -8,7 +14,7 @@
   padding: 1rem;
   cursor: grab;
   border-bottom: 1px solid $white-1;
-  
+
   h3 {
     font-size: 16px;
     margin-bottom: .4rem;
@@ -29,7 +35,7 @@
     display: none;
     cursor: pointer;
     background-color: transparent;
-    
+
     svg {
       fill: $primaryColorDarker;
     }
